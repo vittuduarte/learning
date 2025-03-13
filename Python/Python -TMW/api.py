@@ -4,7 +4,7 @@ import json
 from tqdm import tqdm
 import pandas as pd
 
-ceps = ["69090150", "69055230", "69025010", "69080900"]
+ceps = ["Criar lista de ceps"]
 
 url = "https://viacep.com.br/ws/{cep}/json/"
 
