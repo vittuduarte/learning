@@ -45,4 +45,5 @@ df_completo = (pd.concat(dfs, axis=1)
 df_completo
 # %%
 #salvado o arquivo
-df_completo.to_csv("homicidios_consolidado.csv", index=False, sep=";")
+df_completo.to_csv("./data/ipea/homicidios_consolidado.csv", index=False, sep=";")
+# %%
