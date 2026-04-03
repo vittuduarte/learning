@@ -1,0 +1,13 @@
+services:
+  mlflow-server:
+    build: .
+    container_name: mlflow_server
+    ports:
+      - "5000:5000"
+    env_file:
+      - .env
+    volumes:
+      # Lado esquerdo (host) : Lado direito (container)
+      - ./dados_backup/mlruns:/mlflow/mlruns
+      - ./dados_backup/banco_db:/mlflow/data
+    restart: unless-stopped
