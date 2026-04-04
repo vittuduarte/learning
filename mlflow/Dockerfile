@@ -26,8 +26,4 @@ HEALTHCHECK --interval=30s --timeout=10s --start-period=10s --retries=3 \
     CMD python -c "import urllib.request; urllib.request.urlopen('http://localhost:5000')" || exit 1
 
 # O CMD agora pega os valores que serão passados pelo .env via Docker Compose
-CMD mlflow server \
-    --backend-store-uri ${BACKEND_URI} \
-    --default-artifact-root ${ARTIFACT_ROOT} \
-    --host 0.0.0.0 \
-    --port 5000
+CMD ["mlflow", "server", "--backend-store-uri", "${BACKEND_URI}", "--default-artifact-root", "${ARTIFACT_ROOT}", "--host", "0.0.0.0", "--port", "5000"]
