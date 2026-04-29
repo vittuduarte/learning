@@ -1,0 +1,191 @@
+# ==============================================================================
+# REQUIREMENTS — MACHINE LEARNING
+# Cobertura: Indústria + Academia
+# Python >= 3.10
+# Última revisão: Abril 2026
+# ==============================================================================
+
+# ------------------------------------------------------------------------------
+# CORE CIENTÍFICO
+# ------------------------------------------------------------------------------
+numpy>=1.26.0
+scipy>=1.13.0
+pandas>=2.2.0
+statsmodels>=0.14.2
+
+# ------------------------------------------------------------------------------
+# MACHINE LEARNING — FRAMEWORKS PRINCIPAIS
+# ------------------------------------------------------------------------------
+
+# Scikit-learn: padrão ouro para ML clássico (classificação, regressão, clustering)
+scikit-learn>=1.5.0
+
+# XGBoost: gradient boosting de alta performance, amplamente usado na indústria
+xgboost>=2.0.3
+
+# LightGBM: gradient boosting otimizado para datasets grandes (Microsoft)
+lightgbm>=4.3.0
+
+# CatBoost: gradient boosting nativo para variáveis categóricas (Yandex)
+catboost>=1.2.5
+
+# ------------------------------------------------------------------------------
+# AUTOML
+# ------------------------------------------------------------------------------
+
+# Auto-sklearn: AutoML baseado em scikit-learn (academia/indústria)
+# auto-sklearn>=0.15.0  # Linux only — descomente se necessário
+
+# FLAML: AutoML leve e rápido (Microsoft)
+flaml>=2.2.0
+
+# Optuna: otimização de hiperparâmetros por amostragem bayesiana
+optuna>=3.6.1
+
+# Hyperopt: otimização bayesiana e algoritmos de busca
+hyperopt>=0.2.7
+
+# ------------------------------------------------------------------------------
+# FEATURE ENGINEERING & SELEÇÃO
+# ------------------------------------------------------------------------------
+
+# Feature-engine: transformações e encoding avançado
+feature-engine>=1.8.0
+
+# Category Encoders: encodings para variáveis categóricas
+category-encoders>=2.6.3
+
+# imbalanced-learn: técnicas para datasets desbalanceados (SMOTE, etc.)
+imbalanced-learn>=0.12.3
+
+# Featuretools: feature engineering automatizado (DFS)
+featuretools>=1.31.0
+
+# boruta-py: seleção de features baseada em random forests
+boruta>=0.3
+
+# ------------------------------------------------------------------------------
+# PROCESSAMENTO DE DADOS & PIPELINES
+# ------------------------------------------------------------------------------
+
+# Dask: computação paralela e lazy para datasets que não cabem em RAM
+dask[complete]>=2024.5.0
+
+# Polars: DataFrames ultra-rápidos em Rust
+polars>=0.20.20
+
+# Joblib: paralelismo e caching, integrado ao scikit-learn
+joblib>=1.4.2
+
+# scikit-pipeline (via sklearn): já incluso no scikit-learn
+# Pipeline, ColumnTransformer, FunctionTransformer
+
+# ------------------------------------------------------------------------------
+# VALIDAÇÃO, MÉTRICAS E AVALIAÇÃO
+# ------------------------------------------------------------------------------
+
+# yellowbrick: visualização de métricas e diagnóstico de modelos ML
+yellowbrick>=1.5
+
+# scikit-plot: curvas ROC, Precision-Recall, matrizes de confusão
+scikit-plot>=0.3.7
+
+# ------------------------------------------------------------------------------
+# INTERPRETABILIDADE E EXPLICABILIDADE (XAI)
+# ------------------------------------------------------------------------------
+
+# SHAP: explicações baseadas em Shapley values (padrão na indústria)
+shap>=0.45.1
+
+# LIME: explicações locais por aproximação linear
+lime>=0.2.0.1
+
+# interpret: InterpretML da Microsoft (EBM, SHAP, LIME, etc.)
+interpret>=0.6.3
+
+# eli5: inspeção e debug de modelos scikit-learn/xgboost
+eli5>=0.13.0
+
+# ------------------------------------------------------------------------------
+# SERIALIZAÇÃO E DEPLOY DE MODELOS
+# ------------------------------------------------------------------------------
+
+# MLflow: rastreamento de experimentos e registro de modelos
+mlflow>=2.13.0
+
+# joblib: serialização eficiente de modelos scikit-learn
+joblib>=1.4.2
+
+# skops: deploy seguro de modelos scikit-learn (Hugging Face)
+skops>=0.9.0
+
+# ONNX + skl2onnx: exportar modelos para formato interoperável
+onnx>=1.16.0
+skl2onnx>=1.17.0
+onnxruntime>=1.18.0
+
+# BentoML: empacotamento e serving de modelos ML
+bentoml>=1.2.19
+
+# ------------------------------------------------------------------------------
+# PROCESSAMENTO DE LINGUAGEM NATURAL (NLP CLÁSSICO)
+# ------------------------------------------------------------------------------
+
+# NLTK: toolkit clássico de NLP
+nltk>=3.8.1
+
+# spaCy: NLP industrial-strength
+spacy>=3.7.4
+
+# Gensim: word embeddings (Word2Vec, Doc2Vec, LDA)
+gensim>=4.3.2
+
+# scikit-learn já cobre TF-IDF, CountVectorizer, etc.
+
+# ------------------------------------------------------------------------------
+# SÉRIES TEMPORAIS
+# ------------------------------------------------------------------------------
+
+# statsforecast: modelos estatísticos de alta performance (Nixtla)
+statsforecast>=1.7.4
+
+# prophet: forecasting aditivo do Facebook/Meta
+prophet>=1.1.5
+
+# sktime: toolkit unificado para séries temporais (sklearn-compatible)
+sktime>=0.29.0
+
+# tslearn: ML para séries temporais
+tslearn>=0.6.3
+
+# ------------------------------------------------------------------------------
+# DADOS TABULARES — EXTRAS
+# ------------------------------------------------------------------------------
+
+# missingno: visualização de dados ausentes
+missingno>=0.5.2
+
+# ydata-profiling: relatórios automáticos de EDA (antes pandas-profiling)
+ydata-profiling>=4.8.0
+
+# great-expectations: validação e qualidade de dados
+great-expectations>=0.18.16
+
+# ------------------------------------------------------------------------------
+# VISUALIZAÇÃO
+# ------------------------------------------------------------------------------
+
+matplotlib>=3.9.0
+seaborn>=0.13.2
+plotly>=5.22.0
+
+# ------------------------------------------------------------------------------
+# UTILITÁRIOS GERAIS
+# ------------------------------------------------------------------------------
+
+tqdm>=4.66.4
+rich>=13.7.1
+python-dotenv>=1.0.1
+pyyaml>=6.0.1
+click>=8.1.7
+loguru>=0.7.2
