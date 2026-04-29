@@ -1,0 +1,219 @@
+# ==============================================================================
+# REQUIREMENTS — DEEP LEARNING
+# Cobertura: Academica-industrial
+# Python >= 3.12
+# Última revisão: Abril 2026
+# NOTA: GPU (CUDA 12.x) recomendada para a maioria dos frameworks abaixo.
+#       Versões CPU estão indicadas nos comentários quando disponíveis.
+# Autor: Victor Beltrão
+# ==============================================================================
+
+# ------------------------------------------------------------------------------
+# CORE CIENTÍFICO
+# ------------------------------------------------------------------------------
+numpy>=1.26.0
+scipy>=1.13.0
+pandas>=2.2.0
+
+# ------------------------------------------------------------------------------
+# FRAMEWORKS PRINCIPAIS PARA DEEP LEARNING
+# ------------------------------------------------------------------------------
+
+# PyTorch: framework dominante na academia e crescente na indústria
+# CUDA 12.1 — para CPU apenas: pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cpu
+torch>=2.3.0
+torchvision>=0.18.0
+torchaudio>=2.3.0
+
+# TensorFlow / Keras: padrão na indústria para produção e deploy
+tensorflow>=2.16.1
+keras>=3.3.0
+
+# JAX: diferenciação automática de alta performance (Google/academia)
+jax[cuda12]>=0.4.28
+# jax[cpu]>=0.4.28  # versão CPU — descomente se não tiver GPU
+
+# Flax: redes neurais em JAX (estilo funcional, academia)
+flax>=0.8.4
+
+# Optax: otimizadores para JAX/Flax
+optax>=0.2.2
+
+# ------------------------------------------------------------------------------
+# VISÃO COMPUTACIONAL
+# ------------------------------------------------------------------------------
+
+# torchvision: datasets, transforms e modelos pré-treinados (já incluso acima)
+
+# timm: coleção de modelos de visão de alto desempenho (Hugging Face)
+timm>=1.0.3
+
+# Albumentations: augmentação de imagens ultra-rápida (padrão na indústria)
+albumentations>=1.4.10
+
+# OpenCV: visão computacional clássica e pré-processamento
+opencv-python>=4.10.0.82
+
+# Pillow: manipulação de imagens
+Pillow>=10.3.0
+
+# segmentation-models-pytorch: U-Net, DeepLab, FPN, etc.
+segmentation-models-pytorch>=0.3.3
+
+# ultralytics: YOLOv8/v11 — detecção e segmentação em tempo real
+ultralytics>=8.2.18
+
+# ------------------------------------------------------------------------------
+# PROCESSAMENTO DE LINGUAGEM NATURAL (NLP COM DL)
+# ------------------------------------------------------------------------------
+
+# Transformers: modelos pré-treinados (BERT, GPT, T5, LLaMA, etc.) — Hugging Face
+transformers>=4.41.0
+
+# Datasets: datasets padronizados e streaming — Hugging Face
+datasets>=2.19.1
+
+# Tokenizers: tokenização rápida em Rust — Hugging Face
+tokenizers>=0.19.1
+
+# Accelerate: treinamento distribuído e mixed-precision — Hugging Face
+accelerate>=0.30.1
+
+# PEFT: fine-tuning eficiente (LoRA, QLoRA, Adapter, Prefix Tuning)
+peft>=0.11.1
+
+# TRL: RLHF, PPO, DPO, SFT para LLMs — Hugging Face
+trl>=0.8.6
+
+# sentence-transformers: embeddings semânticos e busca semântica
+sentence-transformers>=3.0.0
+
+# ------------------------------------------------------------------------------
+# TREINAMENTO DISTRIBUÍDO E OTIMIZAÇÃO
+# ------------------------------------------------------------------------------
+
+# DeepSpeed: treinamento de modelos grandes com ZeRO (Microsoft)
+deepspeed>=0.14.2
+
+# Lightning (PyTorch Lightning): abstração de treinamento escalável
+lightning>=2.3.0
+
+# torchmetrics: métricas padronizadas para PyTorch Lightning
+torchmetrics>=1.4.0
+
+# einops: operações tensoriais expressivas e legíveis
+einops>=0.8.0
+
+# ------------------------------------------------------------------------------
+# MODELOS GENERATIVOS E DIFUSÃO
+# ------------------------------------------------------------------------------
+
+# diffusers: modelos de difusão (Stable Diffusion, DALL-E-like) — Hugging Face
+diffusers>=0.27.2
+
+# xformers: atenção eficiente em memória para transformers (opcional, GPU)
+# xformers>=0.0.26  # descomente se usar modelos de difusão com GPU
+
+# ------------------------------------------------------------------------------
+# REINFORCEMENT LEARNING (DRL)
+# ------------------------------------------------------------------------------
+
+# Stable-Baselines3: implementações DRL prontas (PPO, SAC, TD3, DQN)
+stable-baselines3>=2.3.2
+
+# Gymnasium: ambiente padrão para RL (sucessor do OpenAI Gym)
+gymnasium>=0.29.1
+
+# tianshou: framework DRL de alto nível, popular na academia
+tianshou>=1.1.0
+
+# ------------------------------------------------------------------------------
+# GRAFOS E GRAPH NEURAL NETWORKS (GNN)
+# ------------------------------------------------------------------------------
+
+# PyTorch Geometric: GNN sobre grafos (GCN, GAT, GraphSAGE, etc.)
+torch-geometric>=2.5.3
+
+# DGL: Deep Graph Library, suporte a PyTorch e TensorFlow
+dgl>=2.1.0
+
+# ------------------------------------------------------------------------------
+# RASTREAMENTO DE EXPERIMENTOS E MLOps
+# ------------------------------------------------------------------------------
+
+# MLflow: rastreamento, registro e serving de modelos
+mlflow>=2.13.0
+
+# Weights & Biases: experimentos, sweeps e relatórios colaborativos
+wandb>=0.17.0
+
+# TensorBoard: visualização de métricas de treinamento (já incluso no TF)
+tensorboard>=2.16.2
+
+# ------------------------------------------------------------------------------
+# QUANTIZAÇÃO, PRUNING E EFICIÊNCIA
+# ------------------------------------------------------------------------------
+
+# bitsandbytes: quantização 8-bit e 4-bit para LLMs em GPU
+bitsandbytes>=0.43.1
+
+# onnx + onnxruntime: exportar e servir modelos de forma eficiente
+onnx>=1.16.0
+onnxruntime-gpu>=1.18.0
+# onnxruntime>=1.18.0  # versão CPU
+
+# optimum: exportação e otimização de modelos Hugging Face para ONNX/TensorRT
+optimum>=1.20.0
+
+# ------------------------------------------------------------------------------
+# INTERPRETABILIDADE EM DL
+# ------------------------------------------------------------------------------
+
+# Captum: interpretabilidade para PyTorch (Grad-CAM, Integrated Gradients)
+captum>=0.7.0
+
+# grad-cam: Gradient-weighted Class Activation Maps
+grad-cam>=1.5.3
+
+# ------------------------------------------------------------------------------
+# ÁUDIO E MULTIMODAL
+# ------------------------------------------------------------------------------
+
+# librosa: análise e processamento de áudio
+librosa>=0.10.2
+
+# openai-whisper: transcrição de áudio de alta qualidade (OpenAI)
+openai-whisper>=20231117
+
+# ------------------------------------------------------------------------------
+# UTILITÁRIOS DE DADOS E TREINAMENTO
+# ------------------------------------------------------------------------------
+
+# LMDB: armazenamento rápido de datasets em disco
+lmdb>=1.4.1
+
+# h5py: leitura/escrita de arquivos HDF5
+h5py>=3.11.0
+
+# webdataset: datasets em formato TAR para treinamento distribuído
+webdataset>=0.2.86
+
+# ------------------------------------------------------------------------------
+# VISUALIZAÇÃO
+# ------------------------------------------------------------------------------
+
+matplotlib>=3.9.0
+seaborn>=0.13.2
+plotly>=5.22.0
+
+# ------------------------------------------------------------------------------
+# UTILITÁRIOS GERAIS
+# ------------------------------------------------------------------------------
+
+tqdm>=4.66.4
+rich>=13.7.1
+python-dotenv>=1.0.1
+pyyaml>=6.0.1
+click>=8.1.7
+loguru>=0.7.2
+huggingface-hub>=0.23.0
