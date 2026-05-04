@@ -5,7 +5,7 @@ print(f"42min e 42s em segundos: {minutos_em_segundos}")
 # %%
 """quantas milhas existem em 10 km?"""
 milhas_por_km = 0.621
-distancia_em_milhas = 10 * milhas_por_km
+distancia_em_milhas = 10 / milhas_por_km
 
 print(f"10km em milhas: {distancia_em_milhas}")
 # %%
